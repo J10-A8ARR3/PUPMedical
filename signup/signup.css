@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../assets/pup_1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.signup {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+.signup h1 {
+    margin-bottom: 10px;
+}
+
+.signup h4 {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.signup input, .signup select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup input[type="submit"] {
+    background: #800008;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup input[type="submit"]:hover {
+    background: #4d0005;
+}
+
+.signup p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.signup a {
+    color: #800008;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../assets/pup_1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+.login h1 {
+    margin-bottom: 10px;
+}
+
+.login h4 {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.login input, .signup select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input[type="submit"] {
+    background: #800008;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login input[type="submit"]:hover {
+    background: #4d0005;
+}
+
+.login p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.login a {
+    color: #800008;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
