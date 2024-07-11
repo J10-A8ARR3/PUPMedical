@@ -9,7 +9,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url('../assets/pupbg3.jpg'); /* Replace with your image URL */
+    background-image: url('../assets/pupbg1.jpg'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -258,20 +258,27 @@ p a {
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: center;
+    text-align: justify;
+    color: black;
 }
+
 .welcome-message h2 {
     margin-top: 0;
 }
 .welcome-message p {
     color: black;
+    text-align: justify;
 }
-.welcome-message img {
+
+.pics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     margin-top: 20px;
-    max-width: 100%;
-    height: 250px;
-    padding: 20p;
 }
+.pics img {
+        max-width: 250px;
+    }
 
 footer {
     text-align: center;
