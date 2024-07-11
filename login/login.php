@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
 
                 if($user_data['pass'] == $password)
                 {
-                    header("location: ../index/index.php");
+                    header("location: ../index/index.html");
                     die;
 
                 }
@@ -45,9 +45,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
 </head>
 <body>
     <div class="login">
-        <h1>Log In</h1>
-        <h4>Please enter your Credentials</h4>
+        <h1>Welcome to</h1>
+        <h4>Hospital Benefit Claim Online Form</h4>
         <form method="POST">
+        <img src="../assets/healthlogo.png" alt logo>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <label for="password">Password</label>

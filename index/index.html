@@ -105,6 +105,7 @@
                         </div>
                     </div>
                 </div>
+                <button type="button" class="back-btn" data-prev="BasicInformationSection">Back</button>
                 <button type="button" class="next-btn" data-next="BeneficiaryInfoSection">Next</button>
             </section>
 
@@ -132,7 +133,25 @@
                     <label for="PhoneNum">Phone Number</label>
                     <input type="text" id="PhoneNum" name="PhoneNum" placeholder="Phone Number" required>
                 </div>
+                <button type="button" class="back-btn" data-prev="MembershipInfoSection">Back</button>
                 <button type="button" class="next-btn" data-next="DocumentRequestSection">Next</button>
+            </section>
+
+            <!-- Document Request Section -->
+            <section id="DocumentRequestSection" style="display:none;">
+                <h3>Document Request</h3>
+                <div class="section-content">
+                    <div class="RequiredDocs" id="documents">
+                        <h4>Select Required Documents</h4>
+                        <label><input type="checkbox" name="documents" value="medical_certificate"> Hospital/Doctor Medical Certificate</label>
+                        <label><input type="checkbox" name="documents" value="statement_of_account"> Statement of Account/Certificate of Payment</label>
+                        <label><input type="checkbox" name="documents" value="official_receipts"> Official Receipts</label>
+                        <label><input type="checkbox" name="documents" value="clinical_data"> Clinical Data or Operating Room Record</label>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="next-btn right-aligned" data-next="SecondSection">Next</button>
+                </div>
             </section>
 
             <!-- Document Request Section -->
@@ -156,14 +175,16 @@
                         </label>
                     </div>
                 </div>
-                <button type="submit">Submit</button>
-            </section>
-        </form>
-    </div>
-
+                <div class="button-container">
+                    <button type="button" class="back-btn" data-prev="BeneficiaryInfoSection">Back</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+</section>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const nextButtons = document.querySelectorAll('.next-btn');
+            const backButtons = document.querySelectorAll('.back-btn');
 
             nextButtons.forEach(button => {
                 button.addEventListener('click', () => {
@@ -173,6 +194,17 @@
 
                     currentSection.style.display = 'none';
                     nextSection.style.display = 'block';
+                });
+            });
+
+            backButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const currentSection = button.parentElement;
+                    const prevSectionId = button.getAttribute('data-prev');
+                    const prevSection = document.getElementById(prevSectionId);
+
+                    currentSection.style.display = 'none';
+                    prevSection.style.display = 'block';
                 });
             });
         });
