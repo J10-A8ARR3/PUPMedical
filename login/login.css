@@ -29,11 +29,6 @@ body {
     color: #555;
 }
 
-.login img {
-    width: 80px;
-    height: 800px;
-    margin-bottom: 20px;
-}
 
 .login form {
     display: flex;

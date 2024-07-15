@@ -48,7 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
         <h1>Welcome to</h1>
         <h4>Hospital Benefit Claim Online Form</h4>
         <form method="POST">
-        <img src="../assets/healthlogo.png" alt logo>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <label for="password">Password</label>
