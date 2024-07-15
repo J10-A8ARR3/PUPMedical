@@ -84,6 +84,14 @@ nav li:last-child {
     margin-right: 0; /* No margin on the last menu item */
 }
 
+.section-content {
+    display: none;
+}
+.section-content.active {
+    display: block;
+}
+
+
 .forms {
     max-width: 600px;
     margin: 50px auto;
@@ -212,6 +220,8 @@ input[type="checkbox"] {
     margin-top: 20px; /* Add some space above the buttons */
 }
 
+
+
 button {
     background-color: #800000;
     color: #fff;
@@ -281,6 +291,10 @@ p a {
 .welcome-message p {
     color: black;
     text-align: justify;
+}
+
+.welcome-message img {
+    width: 150px;
 }
 
 .pics {
